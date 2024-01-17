@@ -36,3 +36,16 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+.contentsWrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+.contentsNav {
+  background: red;
+}
+
+.contentsBody {
+  background: blue;
+}

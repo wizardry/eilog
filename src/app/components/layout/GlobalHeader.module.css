@@ -1,3 +1,13 @@
 .global-header {
   background: var(--main-color);
+  padding: 8px 12px;
+}
+
+.logo-text {
+  font-style: var(--font-mono);
+  color: var(--main-color);
+  letter-spacing: 0.2em;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px -1px 1px #aaa;
 }

@@ -1,8 +1,10 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import GlobalHeader from '@/app/components/layout/GlobalHeader'
-import GlobalFooter from '@/app/components/layout/GlobalFooter'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import GlobalHeader from '@/app/components/layout/GlobalHeader';
+import GlobalNavigation from '@/app/components/layout/GlobalNavigation';
+import GlobalFooter from '@/app/components/layout/GlobalFooter';
+
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,9 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <GlobalHeader />
-        {children}
-        <GlobalFooter />
+        <div className="contentsWrapper">
+          <div className="contentsNav">
+            <GlobalHeader />
+            <GlobalNavigation />
+          </div>
+          <div className="coontentsBody">
+            {children}
+            <GlobalFooter />
+          </div>
+        </div>
       </body>
     </html>
   )

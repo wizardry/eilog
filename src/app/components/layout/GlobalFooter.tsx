@@ -1,7 +1,7 @@
 import styles from './GlobalFooter.module.css';
 const Footer = () => {
   return <footer className={styles["global-footer"]}>
-    footer components
+    <address>contact for @wiz_rein</address>
   </footer>
 }
 

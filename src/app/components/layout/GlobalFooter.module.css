@@ -1,3 +1,10 @@
 .global-footer {
-  background: var(--main-color);
+  display: flex;
+  justify-content: end;
+  margin: 16px 32px 0;
+  padding: 64px 8px 4px;
+  border-top: 1px solid var(--bg-sub-color);
+  background: var(--bg-color);
+  text-decoration: none;
+  font-style: normal;
 }
